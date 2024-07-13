@@ -1,6 +1,6 @@
 # Fichier cible
 TARGET=package_ardui8989_index.json
-VERSION=0.0.6
+VERSION=0.1.0
 # Liste des fichiers source
 DSRCS = sdcc-4.4.0-$(VERSION)-x86_64-apple-darwin12 stcflashisp-$(VERSION)-x86_64-apple-darwin12
 # Liste des fichiers objets
@@ -22,4 +22,3 @@ $(TARGET): $(TGZ) $(MKTOOL)
 clean:
 	rm -f $(TGZ)
 .PHONY: all clean
-
