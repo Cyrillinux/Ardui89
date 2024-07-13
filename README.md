@@ -1,7 +1,7 @@
 # Ardui89 C IDE Beta 0.1.0
 Under GPL license
 
-Arduino for 8051 family (STC89C51; STC89C52, STC15F2K32S2...)
+Arduino for 8051 family (STC89C51; STC89C52, STC15F2K32S2... )
 
 * DISCLAIMER OF ALL WARRANTIES *
 
