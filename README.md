@@ -57,7 +57,7 @@ cyril.barbato@gmx.com
 
 # Arduino 8051/89C5x Pinout equivalent
 
- D                                                                D  A
+ D                                                                 D  A
                +-------------------------------+
                |                               |
  0 P1.0 -------|  1  P1.0              VCC  40 |------ VCC
