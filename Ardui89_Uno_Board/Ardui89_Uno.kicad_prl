@@ -16,15 +16,15 @@
     },
     "selection_filter": {
       "dimensions": false,
-      "footprints": false,
+      "footprints": true,
       "graphics": false,
       "keepouts": false,
       "lockedItems": true,
       "otherItems": false,
       "pads": false,
       "text": true,
-      "tracks": true,
-      "vias": true,
+      "tracks": false,
+      "vias": false,
       "zones": true
     },
     "visible_items": [
@@ -74,7 +74,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "Ardu89_Uno.kicad_prl",
+    "filename": "Ardui89_Uno.kicad_prl",
     "version": 3
   },
   "project": {
