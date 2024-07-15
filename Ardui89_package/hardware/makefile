@@ -1,6 +1,6 @@
 # Fichier cible
 TARGET=package_ardui89_index.json
-VERSION=0.1.0
+VERSION=0.1.1
 # Liste des fichiers source
 DSRCS = ardui89-$(VERSION)
 # Liste des fichiers objets
