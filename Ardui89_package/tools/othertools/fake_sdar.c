@@ -86,9 +86,9 @@ int makelibrariesobj(char *objslist, char *sdccpath, char *libpath, char *includ
                 printf("%s\n",ep->d_name);
                 sprintf(objslist, "%s %s.o", objslist, ep->d_name);
 #if defined(_WIN32) || defined(_WIN64)
-                sprintf(cmdbuffer, "cmd /c %s/sdcc.exe -c -mmcs51 --std-c99 --model-small --opt-code-size --disable-warning 110 --disable-warning 283 %s -o %s.o %s", sdccpath, ep->d_name, ep->d_name, includespath);
+                sprintf(cmdbuffer, "cmd /c %s/sdcc.exe -DARDUINO_ARCH_8051 -c -mmcs51 --std-c99 --model-small --opt-code-size --disable-warning 110 --disable-warning 283 %s -o %s.o %s", sdccpath, ep->d_name, ep->d_name, includespath);
 #elif defined(__APPLE__) || defined(__MACH__) || defined(__linux__)
-                sprintf(cmdbuffer, "%s/sdcc -c -mmcs51 --std-c99 --model-small --opt-code-size --disable-warning 110 --disable-warning 283 %s -o %s.o %s",  sdccpath, ep->d_name, ep->d_name, includespath);
+                sprintf(cmdbuffer, "%s/sdcc -DARDUINO_ARCH_8051 -c -mmcs51 --std-c99 --model-small --opt-code-size --disable-warning 110 --disable-warning 283 %s -o %s.o %s",  sdccpath, ep->d_name, ep->d_name, includespath);
 #else
 #error "OS not supported"
 #endif

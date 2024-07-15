@@ -21,19 +21,13 @@ void print_section(const char* name, unsigned int size, unsigned int addr) {
 int main(int argc, char *argv[]) {
     
     // DEBUG
-    char *orgargsbuffer = (char*) malloc(sizeof(char)*4096);
-    char *cmdbuffer = (char*) malloc(sizeof(char)*4096);
+    char orgargsbuffer[4096];
+    char cmdbuffer[4096];
     char currentpath[4096];
     // See all args
     for (int i = 0; i < argc; i++) {
                 sprintf(orgargsbuffer, "%s %s", orgargsbuffer, argv[i]);
     };
-    getcwd(currentpath, sizeof(currentpath));
-    //sprintf(cmdbuffer,"osascript -e 'tell app \"Terminal\" to do script \"echo FAKE_SIZE:PATH=%s:ORGARGS=%s:END;exit\"'", currentpath, orgargsbuffer);
-    //system(cmdbuffer);
-    free(cmdbuffer);
-    free(orgargsbuffer);
-    // DEBUG END
     if (argc != 2) {
         fprintf(stderr, "Usage: %s <file.hex>\n", argv[0]);
         return 1;
@@ -115,6 +109,13 @@ int main(int argc, char *argv[]) {
     printf(".debug_loc                     0           0\n");
     printf(".debug_ranges                  0           0\n");
     printf("Total                 %10u\n", total_size);
-
+    
+    // DEBUG
+    /*
+    getcwd(currentpath, sizeof(currentpath));
+    sprintf(cmdbuffer,"osascript -e 'tell app \"Terminal\" to do script \"echo FAKE_SIZE:PATH=%s:::::ORGARGS=%s:END;exit\"'", currentpath, orgargsbuffer);
+    system(cmdbuffer);
+    // DEBUG END
+    */
     return 0;
 }

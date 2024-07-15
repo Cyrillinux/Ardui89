@@ -90,7 +90,7 @@ int fakelibraries(char *libdest) {
 #error "OS not supported"
 #endif
     // current path
-    getcwd(currentpath, sizeof(currentpath));
+    //getcwd(currentpath, sizeof(currentpath));
     //Goto to src directory
  
     struct stat buffer;
@@ -123,12 +123,17 @@ int main(int argc, char *argv[]) {
         char sdccpath[4096];
         char currentpath[4096];
     } cc_parameters;
-    char *tabbuffer[32];
-    char *cmdbuffer = (char*) malloc(sizeof(char)*4096);
-    char *argsbuffer = (char*) malloc(sizeof(char)*4096);
-    char *orgargsbuffer = (char*) malloc(sizeof(char)*4096);
+    char cmdbuffer[4096];
+    char argsbuffer[4096];
+    char orgargsbuffer[4096];
+    
+    //Init
     int err=0;
     int includesflag=0;
+    
+    sprintf(cc_parameters.currentpath, ".");
+    sprintf(cc_parameters.sketchpath, ".");
+    
     // test
     if (argc<2) {
         printf("\nusage : fake_cpp <args>...<args>\n\n");
@@ -150,14 +155,13 @@ int main(int argc, char *argv[]) {
         } else if (strstr(argv[i], ".ino.cpp")) {
             sprintf(cc_parameters.sketchpath,"%s",dirname(argv[i]));
             sprintf(cc_parameters.inofilename,"%s",argv[i]);
-            //printf("\".ino\" founded in \"%s\" file name.\n", argv[i]);
-            strncpy(cmdbuffer, argv[i],strlen(argv[i])-8);
-            sprintf(cc_parameters.cfilename, "%s.c", cmdbuffer); // Replace .ino by .c in argv file name
-            sprintf(argsbuffer, "%s %s/../%s", argsbuffer,  cc_parameters.sketchpath, basename(cc_parameters.cfilename));
+            //strncpy(cmdbuffer, argv[i], strlen(argv[i])-8);
+            //sprintf(cc_parameters.cfilename, "%s.c", argv[i]); // Replace .ino by .c in argv file name
+            sprintf(argsbuffer, "%s %s/../%s.c", argsbuffer, cc_parameters.sketchpath, basename(argv[i]));
 #if defined(_WIN32) || defined(_WIN64)
-            sprintf(cmdbuffer, "cmd /c copy %s %s/../%s /y", cc_parameters.inofilename, cc_parameters.sketchpath, basename(cc_parameters.cfilename));
+            sprintf(cmdbuffer, "cmd /c copy %s %s/../%s.c /y", argv[i], cc_parameters.sketchpath, basename(argv[i]));
 #elif defined(__APPLE__) || defined(__MACH__) || defined(__linux__)
-            sprintf(cmdbuffer, "cp -f %s %s/../%s", cc_parameters.inofilename, cc_parameters.sketchpath, basename(cc_parameters.cfilename));
+            sprintf(cmdbuffer, "cp -f %s %s/../%s.c", argv[i], cc_parameters.sketchpath, basename(argv[i]));
 #else
 #error "OS not supported"
 #endif
@@ -171,16 +175,15 @@ int main(int argc, char *argv[]) {
             sprintf(argsbuffer, "%s -I%s/../libraries",argsbuffer, cc_parameters.sketchpath);
             printf("Copy libraries Done.\n");
         } else if (strstr(argv[i], ".cpp") && !strstr(argv[i], ".cpp.")) {
-            sprintf(cc_parameters.sketchpath,"%s",dirname(argv[i]));
-            sprintf(cc_parameters.inofilename,"%s",argv[i]);
-            //printf("\".ino\" founded in \"%s\" file name.\n", argv[i]);
-            strncpy(cmdbuffer, argv[i],strlen(argv[i])-4);
-            sprintf(cc_parameters.cfilename, "%s.c", cmdbuffer); // Replace .ino by .c in argv file name
-            sprintf(argsbuffer, "%s %s/../%s", argsbuffer,  cc_parameters.sketchpath, basename(cc_parameters.cfilename));
+            sprintf(cc_parameters.currentpath,"%s",dirname(argv[i]));
+            //sprintf(cc_parameters.inofilename,"%s",argv[i]);
+            //strncpy(cmdbuffer, argv[i],strlen(argv[i])-4);
+            //sprintf(cc_parameters.cfilename, "%s.c", argv[i]); // Replace .ino by .c in argv file name
+            sprintf(argsbuffer, "%s %s/../%s.c", argsbuffer, cc_parameters.currentpath, basename(argv[i]));
 #if defined(_WIN32) || defined(_WIN64)
-            sprintf(cmdbuffer, "cmd /c copy %s %s/../%s /y", cc_parameters.inofilename, cc_parameters.sketchpath, basename(cc_parameters.cfilename));
+            sprintf(cmdbuffer, "cmd /c copy %s %s/../%s.c /y", argv[i], cc_parameters.currentpath, basename(argv[i]));
 #elif defined(__APPLE__) || defined(__MACH__) || defined(__linux__)
-            sprintf(cmdbuffer, "cp -f %s %s/../%s", cc_parameters.inofilename, cc_parameters.sketchpath, basename(cc_parameters.cfilename));
+            sprintf(cmdbuffer, "cp -f %s %s/../%s.c", argv[i], cc_parameters.currentpath, basename(argv[i]));
 #else
 #error "OS not supported"
 #endif
@@ -188,25 +191,6 @@ int main(int argc, char *argv[]) {
             if (err != 0) { // -1 means an error with the call itself
                 int err = WEXITSTATUS(err);
                 perror("fake_cpp Fake Error '.cpp' !");
-            }
-        } else if (strstr(argv[i], ".cpp.o") && !strstr(argv[i], ".cpp.o.")) {
-            sprintf(cc_parameters.sketchpath,"%s",dirname(argv[i]));
-            sprintf(cc_parameters.inofilename,"%s",argv[i]);
-            //printf("\".ino\" founded in \"%s\" file name.\n", argv[i]);
-            strncpy(cmdbuffer, argv[i],strlen(argv[i])-6);
-            sprintf(cc_parameters.cfilename, "%s.rel", cmdbuffer); // Replace .ino by .c in argv file name
-            sprintf(argsbuffer, "%s %s/../%s", argsbuffer,  cc_parameters.sketchpath, basename(cc_parameters.cfilename));
-#if defined(_WIN32) || defined(_WIN64)
-            sprintf(cmdbuffer, "cmd /c copy %s %s/../%s /y", cc_parameters.inofilename, cc_parameters.sketchpath, basename(cc_parameters.cfilename));
-#elif defined(__APPLE__) || defined(__MACH__) || defined(__linux__)
-            sprintf(cmdbuffer, "cp -f %s %s/../%s", cc_parameters.inofilename, cc_parameters.sketchpath, basename(cc_parameters.cfilename));
-#else
-#error "OS not supported"
-#endif
-            err=system(cmdbuffer);
-            if (err != 0) { // -1 means an error with the call itself
-                int err = WEXITSTATUS(err);
-                perror("fake_cpp Error '.cpp' !");
             }
         } else {sprintf(argsbuffer, "%s %s", argsbuffer, argv[i]);}
         /*if (strstr(argv[i], "core")) {
@@ -217,14 +201,13 @@ int main(int argc, char *argv[]) {
     }
         // IF FILES FLAGS INCLUDE DETECTED / ADD SKECTH PATH
         if (includesflag)  {
-            sprintf(argsbuffer, "%s -I%s", argsbuffer, cc_parameters.sketchpath);
+            sprintf(argsbuffer, "%s -I%s -I%s", argsbuffer,  cc_parameters.currentpath, cc_parameters.sketchpath);
         }
         // Debug series...
         //printf("My Arguments : %s\n", cc_parameters.inofilename);
         //chdir(cc_parameters.sketchpath);
         /*
-        getcwd(cc_parameters.currentpath, sizeof(cc_parameters.currentpath));
-        sprintf(cmdbuffer,"osascript -e 'tell app \"Terminal\" to do script \"echo FAKE_CPP:ORG=%s:PWD=%s:SDCC=%s/sdcc %s:END;exit\"'", orgargsbuffer,cc_parameters.currentpath, cc_parameters.sdccpath, argsbuffer);
+        sprintf(cmdbuffer,"osascript -e 'tell app \"Terminal\" to do script \"echo BEGIN:FAKE_CPP:::ORG=%s:::SDCC=%s/sdcc %s:::END;exit\"'", orgargsbuffer, cc_parameters.sdccpath, argsbuffer);
         system(cmdbuffer);
          */
         /*sprintf(cmdbuffer,"echo \"-%s %s %s %s-\">%s/../arduino_stc_sdcc_info%ld.txt", cc_parameters.sketchpath, cc_parameters.inofilename, cc_parameters.cfilename, cc_parameters.cflags, cc_parameters.sketchpath, millis());
@@ -245,10 +228,6 @@ int main(int argc, char *argv[]) {
             int err = WEXITSTATUS(err);
             perror("fake_cpp Error !");
         }
-    
-    free (orgargsbuffer);
-    free (argsbuffer);
-    free (cmdbuffer);
     printf("fake_cpp Done.\n");
     return err;
 }
