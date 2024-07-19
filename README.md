@@ -1,15 +1,16 @@
-# Ardui89 C IDE Beta 0.1.0
+# Ardui89 C IDE Beta 0.2.1
 Under GPL license
 
-Arduino for 8051 family (STC89C51; STC89C52, STC15F2K32S2... )
+Arduino achitectures : AVR, 8051, STC89C51, STC89C51, STC15F2K32K2...
 
 * DISCLAIMER OF ALL WARRANTIES *
+
+MACOS AND WINDOWS READY TOO !
 
 not official package and patch
 
 This project is new projet, just starting !
 
-MacOS only for instant ! But more platforms soon !
 
 This package and this patch for Arduino 1 8 19 allows to COMPIL a .ino for 8051 family in C and UPLOAD into STC89Cxx Family
 
@@ -19,9 +20,12 @@ This package and this patch for Arduino 1 8 19 allows to COMPIL a .ino for 8051 
                                         -tools      -sdcc compiler
                                                     -stcflahisp.py
 
-#Todo
-Create all equivalent Arduino basic functions
-Install Arduino.h, pins_arduino.h, .... All Arduino compatible files directly in package...
+#Add
+0.0.1 : first Mac OS try (compiling only)
+0.0.6 : Mac OS completed (compuling and programming)
+0.1.1 : tone function builtin, bugs fixed
+0.2.0 : first windows try (compilling only)
+0.2.1 : fist windows version completed (compilling and programming)
 
 #Installation and test
 
@@ -55,7 +59,7 @@ cyril.barbato@gmx.com
 
 
 
-# Arduino 8051/89C5x Pinout equivalent
+# Arduino 8051/89C5x pinout equivalent
 
  D                                                                 D  A
                +-------------------------------+
@@ -81,3 +85,4 @@ cyril.barbato@gmx.com
   XTAL1 -------| 19  XTAL1 P          P2.1  22 |------ P2.1 (A9)  17
     GND -------| 20  GND              P2.0  21 |------ P2.0 (A8)  16
                +-------------------------------+
+
