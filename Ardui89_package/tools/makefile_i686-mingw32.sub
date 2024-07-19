@@ -3,7 +3,7 @@ TARGET=package_ardui89_index.json
 VERSION=0.2.1
 STCFLASHISP_VERSION=0.2.1
 SDCC_VERSION=4.4.0
-HOST = x86_64-apple-darwin12
+HOST = i686-mingw32
 # Liste des fichiers source
 DSRCS = sdcc-$(SDCC_VERSION)-$(HOST) fake_cc-$(VERSION)-$(HOST) stcflashisp-$(STCFLASHISP_VERSION)-$(HOST)
 
@@ -26,6 +26,3 @@ $(TARGET): $(TGZ) $(MKTOOL)
 clean:
 	rm -f $(TGZ)
 .PHONY: all clean
-
-mingw32:
-	make -f makefile_i686-mingw32.sub
