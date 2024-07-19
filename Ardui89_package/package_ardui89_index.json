@@ -12,6 +12,84 @@
                 {
                     "category": "Ardui89",
                     "name": "Ardui89",
+                    "version": "0.2.1",
+                    
+                    "size": "71116",
+                       "checksum": "SHA-256:0cb115c5520362430b2fad0db3d506a380d09d7a7c36e2bf8beab61a7b18bb44",
+                       "archiveFileName": "ardui89-0.2.1.tar.gz",
+                       "url": "http://bacciel.com/tools/ardui89-0.2.1.tar.gz",
+                    
+                    "architecture": "8051",
+                    "boards": [
+                        { "name": "Ardui89 Uno (STC15F2K32S2)" },
+                        { "name": "Ardui89 Cinque Uno (STC89C51/8051)" },
+                        { "name": "Ardui89 Cinque Due (STC89C52/8052)" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Ardui89",
+                            "version": "4.4.0",
+                            "name": "sdcc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.1",
+                            "name": "fake_cc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.1",
+                            "name": "stcflashisp"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "3.7.2-post1",
+                            "name": "python3"
+                        }
+                    ]
+                },
+                {
+                    "category": "Ardui89",
+                    "name": "Ardui89",
+                    "version": "0.2.0",
+                    
+                    "size": "69257",
+                       "checksum": "SHA-256:e31b079bb10c1e41fae7263f8c3ac88ac81ef6cc23d7a04b10c1648c787aab1b",
+                       "archiveFileName": "ardui89-0.2.0.tar.gz",
+                       "url": "http://bacciel.com/tools/ardui89-0.2.0.tar.gz",
+                    
+                    "architecture": "8051",
+                    "boards": [
+                        { "name": "Ardui89 Uno (STC15F2K32S2)" },
+                        { "name": "Ardui89 Cinque Uno (STC89C51/8051)" },
+                        { "name": "Ardui89 Cinque Due (STC89C52/8052)" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Ardui89",
+                            "version": "4.4.0",
+                            "name": "sdcc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.0",
+                            "name": "fake_cc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.0",
+                            "name": "stcflashisp"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "3.7.2-post1",
+                            "name": "python3"
+                        }
+                    ]
+                },
+                {
+                    "category": "Ardui89",
+                    "name": "Ardui89",
                     "version": "0.1.1",
                     
                     "size": "69246",
@@ -45,15 +123,177 @@
             ],
             "tools": [
                 {
+                    "version": "4.4.0",
+                    "name": "sdcc",
+                    "systems": [
+                        {
+                            "size": "32978841",
+                            "checksum": "SHA-256:028f78d41ebb7753198fac0191375dc10e818de9a9876c7a263d8f262d82c696",
+                            "archiveFileName": "sdcc-4.4.0-x86_64-apple-darwin12.tar.gz",
+                            "url": "http://bacciel.com/tools/sdcc-4.4.0-x86_64-apple-darwin12.tar.gz",
+                            "host": "x86_64-apple-darwin12"
+                        }
+                        ,
+                        {
+                            "size": "38289611",
+                            "checksum": "SHA-256:35a1dfa7e552e11e3effbf53299c1aefd123af0fc209b6b679b28825fd68a9df",
+                            "archiveFileName": "sdcc-4.4.0-i686-mingw32.tar.gz",
+                            "url": "http://bacciel.com/tools/sdcc-4.4.0-i686-mingw32.tar.gz",
+                            "host": "i686-mingw32"
+                        }
+                        ,
+                        {
+                            "size": "38289611",
+                            "checksum": "SHA-256:35a1dfa7e552e11e3effbf53299c1aefd123af0fc209b6b679b28825fd68a9df",
+                            "archiveFileName": "sdcc-4.4.0-i686-mingw32.tar.gz",
+                            "url": "http://bacciel.com/tools/sdcc-4.4.0-i686-mingw32.tar.gz",
+                            "host": "x86_64-mingw32"
+                        }
+                        
+                    ]
+                },
+                {
                     "version": "4.4.0-0.1.1",
                     "name": "sdcc",
                     "systems": [
                         {
                             "size": "32990603",
-                               "checksum": "SHA-256:27f2f57235c6fdb0bee43ffafc469d997625a277087e5ce018e6e8a65a7442ba",
-                               "archiveFileName": "sdcc-4.4.0-0.1.1-x86_64-apple-darwin12.tar.gz",
-                               "url": "http://bacciel.com/tools/sdcc-4.4.0-0.1.1-x86_64-apple-darwin12.tar.gz",
-                               "host": "x86_64-apple-darwin12"
+                            "checksum": "SHA-256:27f2f57235c6fdb0bee43ffafc469d997625a277087e5ce018e6e8a65a7442ba",
+                            "archiveFileName": "sdcc-4.4.0-0.1.1-x86_64-apple-darwin12.tar.gz",
+                            "url": "http://bacciel.com/tools/sdcc-4.4.0-0.1.1-x86_64-apple-darwin12.tar.gz",
+                            "host": "x86_64-apple-darwin12"
+                        }
+                    ]
+                },
+                {
+                    "version": "0.2.1",
+                    "name": "fake_cc",
+                    "systems": [
+                        {
+                            "size": "26806",
+                            "checksum": "SHA-256:7075faa31faa6971732643ec0a8dd8b5387fc96e9c3d96aedb357a6f7c6c4760",
+                            "archiveFileName": "fake_cc-0.2.1-x86_64-apple-darwin12.tar.gz",
+                            "url": "http://bacciel.com/tools/fake_cc-0.2.1-x86_64-apple-darwin12.tar.gz",
+                            "host": "x86_64-apple-darwin12"
+                        }
+                        ,
+                        {
+                            "size": "142077",
+                            "checksum": "SHA-256:5769958fb392e92742d1e46567dc6769692b7d729895a9e6a1fb49a92f0033cc",
+                            "archiveFileName": "fake_cc-0.2.1-i686-mingw32.tar.gz",
+                            "url": "http://bacciel.com/tools/fake_cc-0.2.1-i686-mingw32.tar.gz",
+                            "host": "i686-mingw32"
+                        }
+                        ,
+                        {
+                            "size": "142077",
+                            "checksum": "SHA-256:5769958fb392e92742d1e46567dc6769692b7d729895a9e6a1fb49a92f0033cc",
+                            "archiveFileName": "fake_cc-0.2.1-i686-mingw32.tar.gz",
+                            "url": "http://bacciel.com/tools/fake_cc-0.2.1-i686-mingw32.tar.gz",
+                            "host": "x86_64-mingw32"
+                        }
+                    ]
+                },
+                {
+                    "version": "0.2.0",
+                    "name": "fake_cc",
+                    "systems": [
+                        {
+                            "size": "25641",
+                            "checksum": "SHA-256:2eb903ef35671456485657d95d832a1754194bd30c06a5cb547e3ba3c659efac",
+                            "archiveFileName": "fake_cc-0.2.0-x86_64-apple-darwin12.tar.gz",
+                            "url": "http://bacciel.com/tools/fake_cc-0.2.0-x86_64-apple-darwin12.tar.gz",
+                            "host": "x86_64-apple-darwin12"
+                        },
+                        {
+                            "size": "132919",
+                               "checksum": "SHA-256:c185663604addcd3213ed707686bd395761f80c4bb31c5ade45497183ceef3be",
+                               "archiveFileName": "fake_cc-0.2.0-i686-mingw32.tar.gz",
+                               "url": "http://bacciel.com/tools/fake_cc-0.2.0-i686-mingw32.tar.gz",
+                               "host": "i686-mingw32"
+                        }
+                    ]
+                },
+                {
+                    "version": "0.2.1",
+                    "name": "stcflashisp",
+                    "systems": [
+                        {
+                            "size": "118795",
+                            "checksum": "SHA-256:b5fa11c1b0f46ea2729a854e83f377f82b2753b7c51d306a72fc24fdb610ff76",
+                            "archiveFileName": "stcflashisp-0.2.1-x86_64-apple-darwin12.tar.gz",
+                            "url": "http://bacciel.com/tools/stcflashisp-0.2.1-x86_64-apple-darwin12.tar.gz",
+                            "host": "x86_64-apple-darwin12"
+                        }
+                        ,
+                        {
+                            "size": "185449",
+                            "checksum": "SHA-256:3527af61d236fc4006ce89750aeb377efe8597ccadfa21feba3e25dc3aa04e2f",
+                            "archiveFileName": "stcflashisp-0.2.1-i686-mingw32.tar.gz",
+                            "url": "http://bacciel.com/tools/stcflashisp-0.2.1-i686-mingw32.tar.gz",
+                            "host": "i686-mingw32"
+                        }
+                        ,
+                        {
+                            "size": "185449",
+                            "checksum": "SHA-256:3527af61d236fc4006ce89750aeb377efe8597ccadfa21feba3e25dc3aa04e2f",
+                            "archiveFileName": "stcflashisp-0.2.1-i686-mingw32.tar.gz",
+                            "url": "http://bacciel.com/tools/stcflashisp-0.2.1-i686-mingw32.tar.gz",
+                            "host": "x86_64-mingw32"
+                        }
+                    ]
+                },
+                {
+                    "version": "0.2.0",
+                    "name": "stcflashisp",
+                    "systems": [
+                        {
+                            "size": "118795",
+                            "checksum": "SHA-256:1640fa74804539bd757d32bda4b5ba1beb0260ec4b71e0ad6ba844d718c28537",
+                            "archiveFileName": "stcflashisp-0.2.0-x86_64-apple-darwin12.tar.gz",
+                            "url": "http://bacciel.com/tools/stcflashisp-0.2.1-x86_64-apple-darwin12.tar.gz",
+                            "host": "x86_64-apple-darwin12"
+                        },
+                        {
+                            "size": "118794",
+                            "checksum": "SHA-256:8b55325778fdd5cb437ce1d3501d576a0e5adb7b4fa7a5ec1805e679d4fc904f",
+                            "archiveFileName": "stcflashisp-0.2.0-i686-mingw32.tar.gz",
+                            "url": "http://bacciel.com/tools/stcflashisp-0.2.0-i686-mingw32.tar.gz",
+                            "host": "i686-mingw32"
+                        },
+                        {
+                            "size": "118794",
+                            "checksum": "SHA-256:8b55325778fdd5cb437ce1d3501d576a0e5adb7b4fa7a5ec1805e679d4fc904f",
+                            "archiveFileName": "stcflashisp-0.2.0-i686-mingw32.tar.gz",
+                            "url": "http://bacciel.com/tools/stcflashisp-0.2.0-i686-mingw32.tar.gz",
+                            "host": "x86_64-mingw32"
+                        }
+                    ]
+                },
+                {
+                    "version": "0.1.1",
+                    "name": "stcflashisp",
+                    "systems": [
+                        {
+                            "size": "118795",
+                            "checksum": "SHA-256:a59b1af21d5b0aeb2b660d90bd88feda1aae018c4dbfc83f09b9c131ccfdf420",
+                            "archiveFileName": "stcflashisp-0.1.1-x86_64-apple-darwin12.tar.gz",
+                            "url": "http://bacciel.com/tools/stcflashisp-0.1.1-x86_64-apple-darwin12.tar.gz",
+                            "host": "x86_64-apple-darwin12"
+                        },
+                        {
+                            "size": "118795",
+                            "checksum": "SHA-256:a59b1af21d5b0aeb2b660d90bd88feda1aae018c4dbfc83f09b9c131ccfdf420",
+                            "archiveFileName": "stcflashisp-0.1.1-x86_64-apple-darwin12.tar.gz",
+                            "url": "http://bacciel.com/tools/stcflashisp-0.1.1-x86_64-apple-darwin12.tar.gz",
+                            "host": "x86_64-apple-darwin12"
+                        },
+                        {
+                            "size": "118795",
+                            "checksum": "SHA-256:a59b1af21d5b0aeb2b660d90bd88feda1aae018c4dbfc83f09b9c131ccfdf420",
+                            "archiveFileName": "stcflashisp-0.1.1-x86_64-apple-darwin12.tar.gz",
+                            "url": "http://bacciel.com/tools/stcflashisp-0.1.1-x86_64-apple-darwin12.tar.gz",
+                            "host": "x86_64-apple-darwin12"
                         }
                     ]
                 },
