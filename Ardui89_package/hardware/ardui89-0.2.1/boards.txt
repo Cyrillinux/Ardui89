@@ -1,0 +1,138 @@
+###########################################################################
+# Menu options
+menu.cpu=Processor
+menu.bootloader=Boot type
+menu.clock=Clock
+###########################################################################
+################
+# STC15F2K32S2 #
+################
+# General
+stc15f2k32s2.name=Ardui89 Uno (STC15F2K32S2)
+stc15f2k32s2.upload.tool=stcflashisp
+stc15f2k32s2.upload.tool.default=stcflashisp
+stc15f2k32s2.upload.protocol=89
+stc15f2k32s2.upload.maximum_data_size=128
+stc15f2k32s2.upload.speed=9600
+stc15f2k32s2.bootloader.tool=stcflashisp
+stc15f2k32s2.bootloader.tool.default=stcflashisp
+stc15f2k32s2.bootloader.unlock_bits=0x3F
+stc15f2k32s2.bootloader.lock_bits=0x0F
+stc15f2k32s2.bootloader.protocol=89
+stc15f2k32s2.build.board=stc15f2k32s2
+stc15f2k32s2.build.variant=stc89c51
+stc15f2k32s2.build.core=Ardui89
+stc15f2k32s2.build.mcu=mcs51
+# Clocks
+stc15f2k32s2.menu.clock.11_0592MHz_ext=External 11.0592MHz
+stc15f2k32s2.menu.clock.11_0592MHz_ext.build.f_cpu=11059200L
+stc15f2k32s2.menu.clock.11_0592MHz_ext.build.clock_speed={build.f_cpu}
+#stc15f2k32s2.menu.clock.11_0592MHz_ext.bootloader.low_fuses=0xFF
+stc15f2k32s2.menu.clock.12MHz_ext=External 12 MHz
+stc15f2k32s2.menu.clock.12MHz_ext.build.f_cpu=12000000L
+stc15f2k32s2.menu.clock.12MHz_ext.build.clock_speed={build.f_cpu}
+#stc15f2k32s2.menu.clock.12MHz_ext.bootloader.low_fuses=0xFF
+stc15f2k32s2.menu.clock.16MHz_ext=External 16 MHz
+stc15f2k32s2.menu.clock.16MHz_ext.build.f_cpu=16000000L
+stc15f2k32s2.menu.clock.16MHz_ext.build.clock_speed={build.f_cpu}
+#stc15f2k32s2.menu.clock.16MHz_ext.bootloader.low_fuses=0xFF
+# Bootloaders FUTUR DEVEL
+stc15f2k32s2.menu.bootloader.no_bootloader=Auto-programming
+stc15f2k32s2.menu.bootloader.no_bootloader.upload.maximum_size=32768
+#stc15f2k32s2.menu.bootloader.no_bootloader.bootloader.high_fuses=0xDF
+#stc15f2k32s2.menu.bootloader.no_bootloader.bootloader.extended_fuses=0xFF
+stc15f2k32s2.menu.bootloader.no_bootloader.bootloader.file=megax8/optiboot_stc15f2k32s2.hex
+#stc15f2k32s2.menu.bootloader.optiboot=Soft boot
+#stc15f2k32s2.menu.bootloader.optiboot.upload.maximum_size=3584
+#stc15f2k32s2.menu.bootloader.optiboot.bootloader.high_fuses=0xDE
+#stc15f2k32s2.menu.bootloader.optiboot.bootloader.extended_fuses=0xFF
+#stc15f2k32s2.menu.bootloader.optiboot.bootloader.file=megax8/optiboot_stc89c51.hex
+###########################################################################
+##############
+# STC89C51 #
+##############
+# General
+stc89c51.name=Ardui89 Cinque Uno (STC89C51)
+stc89c51.upload.tool=stcflashisp
+stc89c51.upload.tool.default=stcflashisp
+stc89c51.upload.protocol=89
+stc89c51.upload.maximum_data_size=128
+stc89c51.upload.speed=9600
+stc89c51.bootloader.tool=stcflashisp
+stc89c51.bootloader.tool.default=stcflashisp
+stc89c51.bootloader.unlock_bits=0x3F
+stc89c51.bootloader.lock_bits=0x0F
+stc89c51.bootloader.protocol=89
+stc89c51.build.board=STC89C51
+stc89c51.build.variant=stc89c51
+stc89c51.build.core=Ardui89
+stc89c51.build.mcu=mcs51
+# Clocks
+stc89c51.menu.clock.11_0592MHz_ext=External 11.0592MHz
+stc89c51.menu.clock.11_0592MHz_ext.build.f_cpu=11059200L
+stc89c51.menu.clock.11_0592MHz_ext.build.clock_speed={build.f_cpu}
+#stc89c51.menu.clock.11_0592MHz_ext.bootloader.low_fuses=0xFF
+stc89c51.menu.clock.12MHz_ext=External 12 MHz
+stc89c51.menu.clock.12MHz_ext.build.f_cpu=12000000L
+stc89c51.menu.clock.12MHz_ext.build.clock_speed={build.f_cpu}
+#stc89c51.menu.clock.12MHz_ext.bootloader.low_fuses=0xFF
+stc89c51.menu.clock.16MHz_ext=External 16 MHz
+stc89c51.menu.clock.16MHz_ext.build.f_cpu=16000000L
+stc89c51.menu.clock.16MHz_ext.build.clock_speed={build.f_cpu}
+#stc89c51.menu.clock.16MHz_ext.bootloader.low_fuses=0xFF
+# Bootloaders FUTUR DEVEL
+stc89c51.menu.bootloader.no_bootloader=Auto-programming
+stc89c51.menu.bootloader.no_bootloader.upload.maximum_size=4096
+#stc89c51.menu.bootloader.no_bootloader.bootloader.high_fuses=0xDF
+#stc89c51.menu.bootloader.no_bootloader.bootloader.extended_fuses=0xFF
+stc89c51.menu.bootloader.no_bootloader.bootloader.file=megax8/optiboot_stc89c51.hex
+#stc89c51.menu.bootloader.optiboot=Soft boot
+#stc89c51.menu.bootloader.optiboot.upload.maximum_size=3584
+#stc89c51.menu.bootloader.optiboot.bootloader.high_fuses=0xDE
+#stc89c51.menu.bootloader.optiboot.bootloader.extended_fuses=0xFF
+#stc89c51.menu.bootloader.optiboot.bootloader.file=megax8/optiboot_stc89c51.hex
+###########################################################################
+##############
+# STC89C52 #
+##############
+# General
+stc89c52.name=Ardui89 Cinque Due (STC89C52)
+stc89c52.upload.tool=stcflashisp
+stc89c52.upload.tool.default=stcflashisp
+stc89c52.upload.protocol=89
+stc89c52.upload.maximum_data_size=128
+stc89c52.upload.speed=9600
+stc89c52.bootloader.tool=stcflashisstcflashisp
+stc89c52.bootloader.tool.default=stcflashisp
+stc89c52.bootloader.unlock_bits=0x3F
+stc89c52.bootloader.lock_bits=0x0F
+stc89c52.bootloader.protocol=89
+stc89c52.build.board=STC89C52
+stc89c52.build.variant=stc89c51
+stc89c52.build.core=Ardui89
+stc89c52.build.mcu=mcs51
+# Clocks
+stc89c52.menu.clock.11_0592MHz_ext=External 11.0592MHz
+stc89c52.menu.clock.11_0592MHz_ext.build.f_cpu=11059200L
+stc89c52.menu.clock.11_0592MHz_ext.build.clock_speed={build.f_cpu}
+#stc89c52.menu.clock.11_0592MHz_ext.bootloader.low_fuses=0xFF
+stc89c52.menu.clock.12MHz_ext=External 12 MHz
+stc89c52.menu.clock.12MHz_ext.build.f_cpu=12000000L
+stc89c52.menu.clock.12MHz_ext.build.clock_speed={build.f_cpu}
+#stc89c52.menu.clock.12MHz_ext.bootloader.low_fuses=0xFF
+stc89c52.menu.clock.16MHz_ext=External 16 MHz
+stc89c52.menu.clock.16MHz_ext.build.f_cpu=16000000L
+stc89c52.menu.clock.16MHz_ext.build.clock_speed={build.f_cpu}
+#stc89c52.menu.clock.16MHz_ext.bootloader.low_fuses=0xFF
+# Bootloaders FUTUR DEVEL
+stc89c52.menu.bootloader.no_bootloader=Auto-programming
+stc89c52.menu.bootloader.no_bootloader.upload.maximum_size=8192
+#stc89c52.menu.bootloader.no_bootloader.bootloader.high_fuses=0xDF
+#stc89c52.menu.bootloader.no_bootloader.bootloader.extended_fuses=0xFF
+stc89c52.menu.bootloader.no_bootloader.bootloader.file=megax8/optiboot_stc89c52.hex
+#stc89c52.menu.bootloader.optiboot=Soft Boot
+stc89c52.menu.bootloader.optiboot.upload.maximum_size=7680
+#stc89c52.menu.bootloader.optiboot.bootloader.high_fuses=0xDE
+#stc89c52.menu.bootloader.optiboot.bootloader.extended_fuses=0xFF
+#stc89c52.menu.bootloader.optiboot.bootloader.file=megax8/optiboot_stc89c52.hex
+###########################################################################
