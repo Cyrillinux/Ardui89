@@ -1,4 +1,4 @@
-# Ardui89 C IDE Beta 0.2.1
+# Ardui89 8051 C IDE Beta 0.2.1 for Arduino IDE
 
 Under GPL license
 
