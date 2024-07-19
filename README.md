@@ -2,7 +2,7 @@
 
 Under GPL license
 
-Add 8051 architectures family to Arduino IDE (STC89C51, STC89C51, STC15F2K32K2...)
+Add 8051 architecture family to Arduino IDE (STC89C51, STC89C51, STC15F2K32K2...)
 
 * DISCLAIMER OF ALL WARRANTIES *
 
