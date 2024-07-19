@@ -1,18 +1,20 @@
 # Ardui89 C IDE Beta 0.2.1
+
 Under GPL license
 
-Arduino achitectures : AVR, 8051, STC89C51, STC89C51, STC15F2K32K2...
+Add 8051 architectures family to Arduino IDE (STC89C51, STC89C51, STC15F2K32K2...)
 
 * DISCLAIMER OF ALL WARRANTIES *
 
 MACOS AND WINDOWS READY TOO !
 
-not official package and patch
+This package is new projet, just begening, not official package and patch.
 
-This project is new projet, just starting !
+Allows to COMPIL a Arduino .ino file for 8051 family in C and UPLOAD into STC89C5x Family
 
+#Important
 
-This package and this patch for Arduino 1 8 19 allows to COMPIL a .ino for 8051 family in C and UPLOAD into STC89Cxx Family
+Under WindOz, using absoluty last version (>=3.8) of CH340 drivers (CH341SER.ZIP)
 
 #Content
 
@@ -26,6 +28,9 @@ This package and this patch for Arduino 1 8 19 allows to COMPIL a .ino for 8051 
 0.1.1 : tone function builtin, bugs fixed
 0.2.0 : first windows try (compilling only)
 0.2.1 : fist windows version completed (compilling and programming)
+
+#Todo
+analogRead, analogWrite etc...
 
 #Installation and test
 
@@ -57,9 +62,10 @@ Cyril BARBATO
 http://bacciel.com
 cyril.barbato@gmx.com
 
+# Arduino <=> 8051/89C5x pinout equivalent
 
-
-# Arduino 8051/89C5x pinout equivalent
+D : Arduino digital pins
+A : Arduino analog pins
 
  D                                                                 D  A
                +-------------------------------+
