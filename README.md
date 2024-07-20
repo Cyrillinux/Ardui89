@@ -66,6 +66,7 @@ cyril.barbato@gmx.com
 
 D : Arduino digital pins
 A : Arduino analog pins
+LED_BULTIN : D13 (P3.5)
 
  D                                                                 D  A
                +-------------------------------+
@@ -91,4 +92,3 @@ A : Arduino analog pins
   XTAL1 -------| 19  XTAL1 P          P2.1  22 |------ P2.1 (A9)  17
     GND -------| 20  GND              P2.0  21 |------ P2.0 (A8)  16
                +-------------------------------+
-
