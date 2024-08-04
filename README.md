@@ -1,4 +1,4 @@
-# Ardui89 8051 C IDE Beta 0.2.1 for Arduino IDE
+# Ardui89 8051 C IDE Beta 0.3.1 for Arduino IDE
 
 Under GPL license
 
@@ -24,10 +24,14 @@ Under WindOz, using absoluty last version (>=3.8) of CH340 drivers (CH341SER.ZIP
 
 #Add
 0.0.1 : first Mac OS try (compiling only)
-0.0.6 : Mac OS completed (compuling and programming)
+0.0.6 : Mac OS completed (compiling and programming)
 0.1.1 : tone function builtin, bugs fixed
 0.2.0 : first windows try (compilling only)
 0.2.1 : fist windows version completed (compilling and programming)
+0.2.2 : Warning : new PINOUT for 805x Arduino equivalent and add STC32G12K128 = 8952 with 128k flash memory
+0.2.3 : PINOUT fixed, bugs fixed. Variants STC15F2K32S2, STC32G12K128 fixed
+0.3.0 : Replace stcflash by stcgal -> stc15 best process, add STC15W408AS-DIP16
+0.3.1 : Bugs fixed
 
 #Todo
 analogRead, analogWrite etc...
