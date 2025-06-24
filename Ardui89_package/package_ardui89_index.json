@@ -11,6 +11,453 @@
             "platforms": [
                 {
                     "category": "Ardui89",
+                    "name": "Ardui89 8051 Family Boards",
+                    "version": "0.3.11",
+                    "size": "106138",
+                       "checksum": "SHA-256:8deaf5267a5af4bfc648707d3b5e6678c264196ed911dcec391ca5763a3f1416",
+                       "archiveFileName": "ardui89-0.3.11.tar.gz",
+                       "url": "http://bacciel.com/tools/ardui89-0.3.11.tar.gz",
+                    "architecture": "8051",
+                    "boards": [
+                        { "name": "Ardui89 Uno 5X2 (STC89C52RC)" },
+                        { "name": "Ardui89 Uno 5X16 (STC89C516RD+)" },
+                        { "name": "Ardui89 Mini (STC15W408AS-DIP16)" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Ardui89",
+                            "version": "4.4.0",
+                            "name": "sdcc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.4",
+                            "name": "fake_cc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "3.8-stcgal-0.3",
+                            "name": "python3"
+                        }
+                    ]
+                },
+                {
+                    "category": "Ardui89",
+                    "name": "Ardui89 8051 Family Boards",
+                    "version": "0.3.10",
+                    "size": "70974",
+                       "checksum": "SHA-256:005eeada60f83ef4fb3760b0fa136ebd9d66993c0724c1a6782d6ee16a5ff486",
+                       "archiveFileName": "ardui89-0.3.10.tar.gz",
+                       "url": "http://bacciel.com/tools/ardui89-0.3.10.tar.gz",
+                    "architecture": "8051",
+                    "boards": [
+                        { "name": "Ardui89 Uno 5X Due (STC89C52/8052)" },
+                        { "name": "Ardui89 Mini (STC15W408AS-DIP16)" },
+                        { "name": "Ardui89 Cinque Uno (STC89C51/8051) (OLD)" },
+                        { "name": "Ardui89 Cinque Due (STC89C52/8052) (OLD)" },
+                        { "name": "Ardui89 Uno (STC15F2K32S2) (OLD)" },
+                        { "name": "Ardui89 128k (STC32G12K128 32bits) (OLD)" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Ardui89",
+                            "version": "4.4.0",
+                            "name": "sdcc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.4",
+                            "name": "fake_cc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "3.8-stcgal-0.3",
+                            "name": "python3"
+                        }
+                    ]
+                },
+                {
+                    "category": "Ardui89",
+                    "name": "Ardui89 8051 Family Boards",
+                    "version": "0.3.9",
+                    "size": "48756",
+                       "checksum": "SHA-256:e756d5857d714f8575e6ff9fff6eb0c5e048a5bae24bd292891c1cad0bc35f8e",
+                       "archiveFileName": "ardui89-0.3.9.tar.gz",
+                       "url": "http://bacciel.com/tools/ardui89-0.3.9.tar.gz",
+                    "architecture": "8051",
+                    "boards": [
+                        { "name": "Ardui89 Uno 5X Due (STC89C52/8052)" },
+                        { "name": "Ardui89 Mini (STC15W408AS-DIP16)" },
+                        { "name": "Ardui89 Cinque Uno (STC89C51/8051) (OLD)" },
+                        { "name": "Ardui89 Cinque Due (STC89C52/8052) (OLD)" },
+                        { "name": "Ardui89 Uno (STC15F2K32S2) (OLD)" },
+                        { "name": "Ardui89 128k (STC32G12K128 32bits) (OLD)" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Ardui89",
+                            "version": "4.4.0",
+                            "name": "sdcc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.4",
+                            "name": "fake_cc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "3.8-stcgal-0.3",
+                            "name": "python3"
+                        }
+                    ]
+                },
+                {
+                    "category": "Ardui89",
+                    "name": "Ardui89 8051 Family Boards",
+                    "version": "0.3.8",
+                    "size": "62098",
+                        "checksum": "SHA-256:c5ab707d525fd421c5e693fd367bc3e0611ef6d3bad9be0fb8a7cc3e908646cd",
+                        "archiveFileName": "ardui89-0.3.8.tar.gz",
+                        "url": "http://bacciel.com/tools/ardui89-0.3.8.tar.gz",
+                    "architecture": "8051",
+                    "boards": [
+                        { "name": "Ardui89 Uno 5X Due (STC89C52/8052)" },
+                        { "name": "Ardui89 Mini (STC15W408AS-DIP16)" },
+                        { "name": "Ardui89 Cinque Uno (STC89C51/8051) (OLD)" },
+                        { "name": "Ardui89 Cinque Due (STC89C52/8052) (OLD)" },
+                        { "name": "Ardui89 Uno (STC15F2K32S2) (OLD)" },
+                        { "name": "Ardui89 128k (STC32G12K128 32bits) (OLD)" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Ardui89",
+                            "version": "4.4.0",
+                            "name": "sdcc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.3",
+                            "name": "fake_cc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "3.8-stcgal-0.3",
+                            "name": "python3"
+                        }
+                    ]
+                },
+                {
+                    "category": "Ardui89",
+                    "name": "Ardui89 8051 Family Boards",
+                    "version": "0.3.7",
+                    "size": "57743",
+                       "checksum": "SHA-256:df75580d95415be8161863c627bafbc1114b1842333b833473c496e36a897c82",
+                       "archiveFileName": "ardui89-0.3.7.tar.gz",
+                       "url": "http://bacciel.com/tools/ardui89-0.3.7.tar.gz",
+                    "architecture": "8051",
+                    "boards": [
+                        { "name": "Ardui89 Cinque Uno (STC89C51/8051)" },
+                        { "name": "Ardui89 Cinque Due (STC89C52/8052)" },
+                        { "name": "Ardui89 Mini (STC15W408AS-DIP16)" },
+                        { "name": "Ardui89 Uno (STC15F2K32S2)" },
+                        { "name": "Ardui89 128k (STC32G12K128 32bits)" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Ardui89",
+                            "version": "4.4.0",
+                            "name": "sdcc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.2",
+                            "name": "fake_cc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "3.8-stcgal-0.3",
+                            "name": "python3"
+                        }
+                    ]
+                },
+                {
+                    "category": "Ardui89",
+                    "name": "Ardui89 8051 Family Boards",
+                    "version": "0.3.6",
+                    "size": "61038",
+                       "checksum": "SHA-256:2dd81944316d78f44a1c37039d42e409582fc1d8b649bce64e6bf5f44d6f1006",
+                       "archiveFileName": "ardui89-0.3.6.tar.gz",
+                       "url": "http://bacciel.com/tools/ardui89-0.3.6.tar.gz",
+                    "architecture": "8051",
+                    "boards": [
+                        { "name": "Ardui89 Cinque Uno (STC89C51/8051)" },
+                        { "name": "Ardui89 Cinque Due (STC89C52/8052)" },
+                        { "name": "Ardui89 Mini (STC15W408AS-DIP16)" },
+                        { "name": "Ardui89 Uno (STC15F2K32S2)" },
+                        { "name": "Ardui89 128k (STC32G12K128 32bits)" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Ardui89",
+                            "version": "4.4.0",
+                            "name": "sdcc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.2",
+                            "name": "fake_cc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "3.8-stcgal-0.3",
+                            "name": "python3"
+                        }
+                    ]
+                },
+                {
+                    "category": "Ardui89",
+                    "name": "Ardui89 8051 Family Boards",
+                    "version": "0.3.5",
+                    "size": "64142",
+                        "checksum": "SHA-256:529949ae9a5b6feab7ba6096a53640b426ef3e31dbae90a3117382f0b070a3e3",
+                        "archiveFileName": "ardui89-0.3.5.tar.gz",
+                        "url": "http://bacciel.com/tools/ardui89-0.3.5.tar.gz",
+                    "architecture": "8051",
+                    "boards": [
+                        { "name": "Ardui89 Cinque Uno (STC89C51/8051)" },
+                        { "name": "Ardui89 Cinque Due (STC89C52/8052)" },
+                        { "name": "Ardui89 Mini (STC15W408AS-DIP16)" },
+                        { "name": "Ardui89 Uno (STC15F2K32S2)" },
+                        { "name": "Ardui89 128k (STC32G12K128 32bits)" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Ardui89",
+                            "version": "4.4.0",
+                            "name": "sdcc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.1",
+                            "name": "fake_cc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "3.8-stcgal-0.3",
+                            "name": "python3"
+                        }
+                    ]
+                },
+                {
+                    "category": "Ardui89",
+                    "name": "Ardui89 8051 Family Boards",
+                    "version": "0.3.4",
+                    "size": "67278",
+                       "checksum": "SHA-256:b9623d1056b8f54ed729e50c1ee40028dce5262dc251c78ade35782943f0e0c2",
+                       "archiveFileName": "ardui89-0.3.4.tar.gz",
+                       "url": "http://bacciel.com/tools/ardui89-0.3.4.tar.gz",
+                    "architecture": "8051",
+                    "boards": [
+                        { "name": "Ardui89 Cinque Uno (STC89C51/8051)" },
+                        { "name": "Ardui89 Cinque Due (STC89C52/8052)" },
+                        { "name": "Ardui89 Mini (STC15W408AS-DIP16)" },
+                        { "name": "Ardui89 Uno (STC15F2K32S2)" },
+                        { "name": "Ardui89 128k (STC32G12K128 32bits)" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Ardui89",
+                            "version": "4.4.0",
+                            "name": "sdcc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.1",
+                            "name": "fake_cc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "3.8-stcgal-0.3",
+                            "name": "python3"
+                        }
+                    ]
+                },
+                {
+                    "category": "Ardui89",
+                    "name": "Ardui89 8051 Family Boards",
+                    "version": "0.3.3",
+                    "size": "81576",
+                        "checksum": "SHA-256:dfd88770a2057334cb6e4d5524a44fb7f2e38a3a81cc4e7a71286386ba28863a",
+                        "archiveFileName": "ardui89-0.3.3.tar.gz",
+                        "url": "http://bacciel.com/tools/ardui89-0.3.3.tar.gz",
+                    "architecture": "8051",
+                    "boards": [
+                        { "name": "Ardui89 Cinque Uno (STC89C51/8051)" },
+                        { "name": "Ardui89 Cinque Due (STC89C52/8052)" },
+                        { "name": "Ardui89 Mini (STC15W408AS-DIP16)" },
+                        { "name": "Ardui89 Uno (STC15F2K32S2)" },
+                        { "name": "Ardui89 128k (STC32G12K128 32bits)" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Ardui89",
+                            "version": "4.4.0",
+                            "name": "sdcc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.1",
+                            "name": "fake_cc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "3.8-stcgal-0.3",
+                            "name": "python3"
+                        }
+                    ]
+                },
+                {
+                    "category": "Ardui89",
+                    "name": "Ardui89 8051 Family Boards",
+                    "version": "0.3.2",
+                    "size": "81524",
+                       "checksum": "SHA-256:1282389524b2514bf99044c371bf3a464e95c5addd354a1c40cab2a2fe410113",
+                       "archiveFileName": "ardui89-0.3.2.tar.gz",
+                       "url": "http://bacciel.com/tools/ardui89-0.3.2.tar.gz",
+                    "architecture": "8051",
+                    "boards": [
+                        { "name": "Ardui89 Uno (STC15F2K32S2)" },
+                        { "name": "Ardui89 Cinque Uno (STC89C51/8051)" },
+                        { "name": "Ardui89 Cinque Due (STC89C52/8052)" },
+                        { "name": "Ardui89 128k (STC32G12K128 32bits)" },
+                        { "name": "Ardui89 Mini (STC15W408AS-DIP16)" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Ardui89",
+                            "version": "4.4.0",
+                            "name": "sdcc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.1",
+                            "name": "fake_cc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "3.8-stcgal-0.3",
+                            "name": "python3"
+                        }
+                    ]
+                },
+                {
+                    "category": "Ardui89",
+                    "name": "Ardui89 8051 Family Boards",
+                    "version": "0.3.1",
+                    "size": "81571",
+                        "checksum": "SHA-256:d3ab8e00a2a272ff2f4fe82435a0bb4ffc676f416191c486dbfc52017115050d",
+                        "archiveFileName": "ardui89-0.3.1.tar.gz",
+                        "url": "http://bacciel.com/tools/ardui89-0.3.1.tar.gz",
+                    "architecture": "8051",
+                    "boards": [
+                        { "name": "Ardui89 Uno (STC15F2K32S2)" },
+                        { "name": "Ardui89 Cinque Uno (STC89C51/8051)" },
+                        { "name": "Ardui89 Cinque Due (STC89C52/8052)" },
+                        { "name": "Ardui89 128k (STC32G12K128 32bits)" },
+                        { "name": "Ardui89 Mini (STC15W408AS-DIP16)" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Ardui89",
+                            "version": "4.4.0",
+                            "name": "sdcc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.1",
+                            "name": "fake_cc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "3.8-stcgal-0.3",
+                            "name": "python3"
+                        }
+                    ]
+                },
+                {
+                    "category": "Ardui89",
+                    "name": "Ardui89 8051 Boards",
+                    "version": "0.3.0",
+                    "size": "80611",
+                      "checksum": "SHA-256:65cbceb7415b01945ca19c8a78a346779609a21e373e3496ad4c3ec5d5ae64d0",
+                      "archiveFileName": "ardui89-0.3.tar.gz",
+                      "url": "http://bacciel.com/tools/ardui89-0.3.tar.gz",
+                    "architecture": "8051",
+                    "boards": [
+                        { "name": "Ardui89 Uno (STC15F2K32S2)" },
+                        { "name": "Ardui89 Cinque Uno (STC89C51/8051)" },
+                        { "name": "Ardui89 Cinque Due (STC89C52/8052)" },
+                        { "name": "Ardui89 128k (STC32G12K128 32bits)" },
+                        { "name": "Ardui89 Mini (STC15W408AS-DIP16)" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Ardui89",
+                            "version": "4.4.0",
+                            "name": "sdcc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.1",
+                            "name": "fake_cc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "3.8-stcgal-0.3",
+                            "name": "python3"
+                        }
+                    ]
+                },
+                {
+                    "category": "Ardui89",
+                    "name": "Ardui89",
+                    "version": "0.2.2",
+                    "size": "30394",
+                       "checksum": "SHA-256:6d89b9e3e989c72853575bbfcda8d60c352dc27a31cf308adfb91ccc914b5483",
+                       "archiveFileName": "ardui89-0.2.2.tar.gz",
+                       "url": "http://bacciel.com/tools/ardui89-0.2.2.tar.gz",
+                    
+                    "architecture": "8051",
+                    "boards": [
+                        { "name": "Ardui89 Uno (STC15F2K32S2)" },
+                        { "name": "Ardui89 Cinque Uno (STC89C51/8051)" },
+                        { "name": "Ardui89 Cinque Due (STC89C52/8052)" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Ardui89",
+                            "version": "4.4.0",
+                            "name": "sdcc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.1",
+                            "name": "fake_cc"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "0.2.1",
+                            "name": "stcflashisp"
+                        },
+                        {
+                            "packager": "Ardui89",
+                            "version": "3.7.2-post1",
+                            "name": "python3"
+                        }
+                    ]
+                },
+                {
+                    "category": "Ardui89",
                     "name": "Ardui89",
                     "version": "0.2.1",
                     
@@ -131,7 +578,7 @@
                             "checksum": "SHA-256:028f78d41ebb7753198fac0191375dc10e818de9a9876c7a263d8f262d82c696",
                             "archiveFileName": "sdcc-4.4.0-x86_64-apple-darwin12.tar.gz",
                             "url": "http://bacciel.com/tools/sdcc-4.4.0-x86_64-apple-darwin12.tar.gz",
-                            "host": "x86_64-apple-darwin12"
+                            "host": "x86_64-apple-darwin"
                         }
                         ,
                         {
@@ -149,6 +596,22 @@
                             "url": "http://bacciel.com/tools/sdcc-4.4.0-i686-mingw32.tar.gz",
                             "host": "x86_64-mingw32"
                         }
+                        ,
+                        {
+                            "size": "1280",
+                                "checksum": "SHA-256:2f86e7ed41a42316d92800dd40fa7a5073bb7ada557d48aff0b63c748a13cc06",
+                                "archiveFileName": "sdcc-4.4.0-i686-pc-linux-gnu.tar.gz",
+                                "url": "http://bacciel.com/tools/sdcc-4.4.0-i686-pc-linux-gnu.tar.gz",
+                               "host": "i686-pc-linux-gnu"
+                        }
+                        ,
+                        {
+                            "size": "1280",
+                                "checksum": "SHA-256:2f86e7ed41a42316d92800dd40fa7a5073bb7ada557d48aff0b63c748a13cc06",
+                                "archiveFileName": "sdcc-4.4.0-i686-pc-linux-gnu.tar.gz",
+                                "url": "http://bacciel.com/tools/sdcc-4.4.0-i686-pc-linux-gnu.tar.gz",
+                            "host": "x86_64-pc-linux-gnu"
+                        }
                         
                     ]
                 },
@@ -162,6 +625,141 @@
                             "archiveFileName": "sdcc-4.4.0-0.1.1-x86_64-apple-darwin12.tar.gz",
                             "url": "http://bacciel.com/tools/sdcc-4.4.0-0.1.1-x86_64-apple-darwin12.tar.gz",
                             "host": "x86_64-apple-darwin12"
+                        }
+                    ]
+                },
+                {
+                    "version": "0.2.4",
+                    "name": "fake_cc",
+                    "systems": [
+                        {
+                            "size": "26969",
+                               "checksum": "SHA-256:fdc8d1a9c83a40af1aaa8d440c76151270532bf8be3f68c8ad2ad697d13ca80c",
+                               "archiveFileName": "fake_cc-0.2.4-x86_64-apple-darwin.tar.gz",
+                               "url": "http://bacciel.com/tools/fake_cc-0.2.4-x86_64-apple-darwin.tar.gz",
+                            "host": "x86_64-apple-darwin12"
+                        }
+                        ,
+                        {
+                            "size": "165331",
+                               "checksum": "SHA-256:626fc15f25b4b8d9a23f0bedbd9182c1fbf57af6f4f33465d00933450123764a",
+                               "archiveFileName": "fake_cc-0.2.4-i686-mingw32.tar.gz",
+                               "url": "http://bacciel.com/tools/fake_cc-0.2.4-i686-mingw32.tar.gz",
+                            "host": "i686-mingw32"
+                        }
+                        ,
+                        {
+                            "size": "165331",
+                               "checksum": "SHA-256:626fc15f25b4b8d9a23f0bedbd9182c1fbf57af6f4f33465d00933450123764a",
+                               "archiveFileName": "fake_cc-0.2.4-i686-mingw32.tar.gz",
+                               "url": "http://bacciel.com/tools/fake_cc-0.2.4-i686-mingw32.tar.gz",
+                            "host": "x86_64-mingw32"
+                        }
+                        ,
+                        {
+                            "size": "142153",
+                               "checksum": "SHA-256:933f4fcf37a17e78d649af94f48db4640e379314002a7fb8e94757f6dd869a28",
+                               "archiveFileName": "fake_cc-0.2.1-i686-pc-linux-gnu.tar.gz",
+                               "url": "http://bacciel.com/tools/fake_cc-0.2.1-i686-pc-linux-gnu.tar.gz",
+                               "host": "i686-pc-linux-gnu"
+                        }
+                        ,
+                        {
+                            "size": "142153",
+                               "checksum": "SHA-256:933f4fcf37a17e78d649af94f48db4640e379314002a7fb8e94757f6dd869a28",
+                               "archiveFileName": "fake_cc-0.2.1-i686-pc-linux-gnu.tar.gz",
+                               "url": "http://bacciel.com/tools/fake_cc-0.2.1-i686-pc-linux-gnu.tar.gz",
+                            "host": "x86_64-pc-linux-gnu"
+                        }
+                    ]
+                },
+                {
+                    "version": "0.2.3",
+                    "name": "fake_cc",
+                    "systems": [
+                        {
+                            "size": "25641",
+                                "checksum": "SHA-256:f5e5aa62a319c180125c721d4fe37d86946cc090cca8fca6371dda630ab48758",
+                                "archiveFileName": "fake_cc-0.2.3-x86_64-apple-darwin.tar.gz",
+                                "url": "http://bacciel.com/tools/fake_cc-0.2.3-x86_64-apple-darwin.tar.gz",
+                            "host": "x86_64-apple-darwin12"
+                        }
+                        ,
+                        {
+                            "size": "143454",
+                               "checksum": "SHA-256:686cf035337c77ae65e0651dbd78ce6329559ff1b5dcb817b0de0083a05b6878",
+                               "archiveFileName": "fake_cc-0.2.3-i686-mingw32.tar.gz",
+                               "url": "http://bacciel.com/tools/fake_cc-0.2.3-i686-mingw32.tar.gz",
+                            "host": "i686-mingw32"
+                        }
+                        ,
+                        {
+                            "size": "143454",
+                               "checksum": "SHA-256:686cf035337c77ae65e0651dbd78ce6329559ff1b5dcb817b0de0083a05b6878",
+                               "archiveFileName": "fake_cc-0.2.3-i686-mingw32.tar.gz",
+                               "url": "http://bacciel.com/tools/fake_cc-0.2.3-i686-mingw32.tar.gz",
+                            "host": "x86_64-mingw32"
+                        }
+                        ,
+                        {
+                            "size": "142153",
+                               "checksum": "SHA-256:933f4fcf37a17e78d649af94f48db4640e379314002a7fb8e94757f6dd869a28",
+                               "archiveFileName": "fake_cc-0.2.1-i686-pc-linux-gnu.tar.gz",
+                               "url": "http://bacciel.com/tools/fake_cc-0.2.1-i686-pc-linux-gnu.tar.gz",
+                               "host": "i686-pc-linux-gnu"
+                        }
+                        ,
+                        {
+                            "size": "142153",
+                               "checksum": "SHA-256:933f4fcf37a17e78d649af94f48db4640e379314002a7fb8e94757f6dd869a28",
+                               "archiveFileName": "fake_cc-0.2.1-i686-pc-linux-gnu.tar.gz",
+                               "url": "http://bacciel.com/tools/fake_cc-0.2.1-i686-pc-linux-gnu.tar.gz",
+                            "host": "x86_64-pc-linux-gnu"
+                        }
+                    ]
+                },
+                {
+                    "version": "0.2.2",
+                    "name": "fake_cc",
+                    "systems": [
+                        {
+                            "size": "25728",
+                            "checksum": "SHA-256:197a5eec04a472805a345313ff2ee9fd3277cf58c468bf09fac3f19834367600",
+                            "archiveFileName": "fake_cc-0.2.2-x86_64-apple-darwin.tar.gz",
+                            "url": "http://bacciel.com/tools/fake_cc-0.2.2-x86_64-apple-darwin.tar.gz",
+                            "host": "x86_64-apple-darwin"
+                        }
+                        ,
+                        {
+                            "size": "144428",
+                            "checksum": "SHA-256:a99e55e94ca66aa48bed54e9f8461b551540f3ad9b37efb66705b27e45038383",
+                            "archiveFileName": "fake_cc-0.2.2-i686-mingw32.tar.gz",
+                            "url": "http://bacciel.com/tools/fake_cc-0.2.2-i686-mingw32.tar.gz",
+                            "host": "i686-mingw32"
+                        }
+                        ,
+                        {
+                            "size": "144428",
+                            "checksum": "SHA-256:a99e55e94ca66aa48bed54e9f8461b551540f3ad9b37efb66705b27e45038383",
+                            "archiveFileName": "fake_cc-0.2.2-i686-mingw32.tar.gz",
+                            "url": "http://bacciel.com/tools/fake_cc-0.2.2-i686-mingw32.tar.gz",
+                            "host": "x86_64-mingw32"
+                        }
+                        ,
+                        {
+                            "size": "142153",
+                               "checksum": "SHA-256:933f4fcf37a17e78d649af94f48db4640e379314002a7fb8e94757f6dd869a28",
+                               "archiveFileName": "fake_cc-0.2.1-i686-pc-linux-gnu.tar.gz",
+                               "url": "http://bacciel.com/tools/fake_cc-0.2.1-i686-pc-linux-gnu.tar.gz",
+                               "host": "i686-pc-linux-gnu"
+                        }
+                        ,
+                        {
+                            "size": "142153",
+                               "checksum": "SHA-256:933f4fcf37a17e78d649af94f48db4640e379314002a7fb8e94757f6dd869a28",
+                               "archiveFileName": "fake_cc-0.2.1-i686-pc-linux-gnu.tar.gz",
+                               "url": "http://bacciel.com/tools/fake_cc-0.2.1-i686-pc-linux-gnu.tar.gz",
+                            "host": "x86_64-pc-linux-gnu"
                         }
                     ]
                 },
@@ -191,6 +789,22 @@
                             "archiveFileName": "fake_cc-0.2.1-i686-mingw32.tar.gz",
                             "url": "http://bacciel.com/tools/fake_cc-0.2.1-i686-mingw32.tar.gz",
                             "host": "x86_64-mingw32"
+                        }
+                        ,
+                        {
+                            "size": "142153",
+                               "checksum": "SHA-256:933f4fcf37a17e78d649af94f48db4640e379314002a7fb8e94757f6dd869a28",
+                               "archiveFileName": "fake_cc-0.2.1-i686-pc-linux-gnu.tar.gz",
+                               "url": "http://bacciel.com/tools/fake_cc-0.2.1-i686-pc-linux-gnu.tar.gz",
+                               "host": "i686-pc-linux-gnu"
+                        }
+                        ,
+                        {
+                            "size": "142153",
+                               "checksum": "SHA-256:933f4fcf37a17e78d649af94f48db4640e379314002a7fb8e94757f6dd869a28",
+                               "archiveFileName": "fake_cc-0.2.1-i686-pc-linux-gnu.tar.gz",
+                               "url": "http://bacciel.com/tools/fake_cc-0.2.1-i686-pc-linux-gnu.tar.gz",
+                            "host": "x86_64-pc-linux-gnu"
                         }
                     ]
                 },
@@ -223,7 +837,7 @@
                             "checksum": "SHA-256:b5fa11c1b0f46ea2729a854e83f377f82b2753b7c51d306a72fc24fdb610ff76",
                             "archiveFileName": "stcflashisp-0.2.1-x86_64-apple-darwin12.tar.gz",
                             "url": "http://bacciel.com/tools/stcflashisp-0.2.1-x86_64-apple-darwin12.tar.gz",
-                            "host": "x86_64-apple-darwin12"
+                            "host": "x86_64-apple-darwin"
                         }
                         ,
                         {
@@ -307,6 +921,48 @@
                             "archiveFileName": "stcflashisp-0.1.1-x86_64-apple-darwin12.tar.gz",
                             "url": "http://bacciel.com/tools/stcflashisp-0.1.1-x86_64-apple-darwin12.tar.gz",
                             "host": "x86_64-apple-darwin12"
+                        }
+                    ]
+                },
+                {
+                    "version": "3.8-stcgal-0.3",
+                    "name": "python3",
+                    "systems": [
+                        {
+                            "size": "12041707",
+                               "checksum": "SHA-256:5d457196e191b41f8a65690581abfd48a8978092aee1c8bffbd3dbd97e30709a",
+                               "archiveFileName": "python3-3.8-stcgal-0.3-i686-mingw32.tar.gz",
+                               "url": "http://bacciel.com/tools/python3-3.8-stcgal-0.3-i686-mingw32.tar.gz",
+                               "host": "x86_64-mingw32"
+                        },
+                        {
+                            "size": "12041707",
+                               "checksum": "SHA-256:5d457196e191b41f8a65690581abfd48a8978092aee1c8bffbd3dbd97e30709a",
+                               "archiveFileName": "python3-3.8-stcgal-0.3-i686-mingw32.tar.gz",
+                               "url": "http://bacciel.com/tools/python3-3.8-stcgal-0.3-i686-mingw32.tar.gz",
+                               "host": "i686-mingw32"
+                        },
+                        {
+                            "size": "27814015",
+                               "checksum": "SHA-256:dbb4829525bc857d69d523319d1a96b7005b48a3982f1bfe9d2aa7ad7bca2c59",
+                               "archiveFileName": "python3-3.8-stcgal-0.3-x86_64-apple-darwin.tar.gz",
+                               "url": "http://bacciel.com/tools/python3-3.8-stcgal-0.3-x86_64-apple-darwin.tar.gz",
+                               "host": "x86_64-apple-darwin"
+                        },
+                        {
+                            "size": "368306",
+                               "checksum": "SHA-256:c2947864cbbb3e61fd0fd9c5d67564a258ee70c352e0ce556c74d5ff5cd289ba",
+                               "archiveFileName": "python3-3.8-stcgal-0.3-i686-pc-linux-gnu.tar.gz",
+                               "url": "http://bacciel.com/tools/python3-3.8-stcgal-0.3-i686-pc-linux-gnu.tar.gz",
+                               "host": "i686-pc-linux-gnu"
+                        }
+                        ,
+                        {
+                            "size": "368306",
+                               "checksum": "SHA-256:c2947864cbbb3e61fd0fd9c5d67564a258ee70c352e0ce556c74d5ff5cd289ba",
+                               "archiveFileName": "python3-3.8-stcgal-0.3-i686-pc-linux-gnu.tar.gz",
+                               "url": "http://bacciel.com/tools/python3-3.8-stcgal-0.3-i686-pc-linux-gnu.tar.gz",
+                            "host": "x86_64-pc-linux-gnu"
                         }
                     ]
                 },
