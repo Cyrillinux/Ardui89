@@ -1,11 +1,13 @@
 # Fichier cible
 TARGET=package_ardui89_index.json
-VERSION=0.2.1
-STCFLASHISP_VERSION=0.2.1
 SDCC_VERSION=4.4.0
+FAKECC_VERSION=0.2.4
+#STCFLASHISP_VERSION=0.2.1
+PYTHON_STCGAL_VERSION=0.3
 HOST = i686-mingw32
 # Liste des fichiers source
-DSRCS = sdcc-$(SDCC_VERSION)-$(HOST) fake_cc-$(VERSION)-$(HOST) stcflashisp-$(STCFLASHISP_VERSION)-$(HOST)
+#DSRCS = sdcc-$(SDCC_VERSION)-$(HOST) fake_cc-$(FAKECC_VERSION)-$(HOST) stcflashisp-$(STCFLASHISP_VERSION)-$(HOST)
+DSRCS = sdcc-$(SDCC_VERSION)-$(HOST) fake_cc-$(FAKECC_VERSION)-$(HOST) python3-3.8-stcgal-$(PYTHON_STCGAL_VERSION)-$(HOST)
 
 # Liste des fichiers objets
 TGZ = $(DSRCS:=.tar.gz)
