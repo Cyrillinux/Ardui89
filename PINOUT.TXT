@@ -1,6 +1,6 @@
-#VERSION 0.2.3
+#VERSION 0.3.2
 
-# Arduino <=> 8051/89C5x/STC32G12K128 pinout equivalent
+# Arduino <=> 8051/89C5x/STC89C51x pinout equivalent
 (Ardui89 Cinque Uno/Due/128k R0)
 
 D : Arduino digital pins
@@ -9,9 +9,8 @@ LED_BULTIN : D13 (P3.5)
 
  D                                                                 D  A
                +---------------\/--------------+
-               |                               |
- 7 P1.0 -------|  1  P1.0              VCC  40 |------ VCC
- 8 P1.1 -------|  2  P1.1             P0.0  39 |------ P0.0 (AD0) 31 A7
+ 8 P1.0 -------|  1  P1.0              VCC  40 |------ VCC
+ 9 P1.1 -------|  2  P1.1             P0.0  39 |------ P0.0 (AD0) 31 A7
  2 P1.2 -------|  3  P1.2             P0.1  38 |------ P0.1 (AD1) 30 A6
  3 P1.3 -------|  4  P1.3             P0.2  37 |------ P0.2 (AD2) 29 A5 SCL
  4 P1.4 -------|  5  P1.4             P0.3  36 |------ P0.3 (AD3) 28 A4 SDA
