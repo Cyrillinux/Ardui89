@@ -16,7 +16,6 @@
                    "size": "88688",
                    "checksum": "SHA-256:3cd93219688a5dc81ba0670af357c681065f7d0451df44ff6bfe56e6a2652426",
                    "archiveFileName": "ardui89-0.4.1.tar.gz",
-                   "url": "http://bacciel.com/tools/ardui89-0.4.1.tar.gz",
                        "url": "https://raw.githubusercontent.com/Cyrillinux/Ardui89/refs/heads/main/packages/ardui89-0.4.1.tar.gz",
                     "architecture": "8051",
                     "boards": [
