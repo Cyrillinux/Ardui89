@@ -13,9 +13,10 @@
                     "category": "Ardui89",
                     "name": "Ardui89 8051 Family Boards",
                     "version": "0.4.1",
-                    "size": "88660",
-                       "checksum": "SHA-256:3f1e9ab25ec7d0f7f92dc03a779fd08e439d2982d976f90e70f9c0cdbca90949",
-                       "archiveFileName": "ardui89-0.4.1.tar.gz",
+                   "size": "88688",
+                   "checksum": "SHA-256:3cd93219688a5dc81ba0670af357c681065f7d0451df44ff6bfe56e6a2652426",
+                   "archiveFileName": "ardui89-0.4.1.tar.gz",
+                   "url": "http://bacciel.com/tools/ardui89-0.4.1.tar.gz",
                        "url": "https://sourceforge.net/projects/stc89/files/packages/ardui89-0.4.1.tar.gz",
                     "architecture": "8051",
                     "boards": [
