@@ -1,3 +1,0 @@
-Donwload from :
-
-  http://bacciel.com/tools/sdcc-4.4.0-i686-mingw32.tar.gz

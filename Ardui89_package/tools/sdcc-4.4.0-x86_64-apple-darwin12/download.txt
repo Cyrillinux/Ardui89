@@ -1,3 +1,0 @@
-Download to :
-
-  http://bacciel.com/tools/sdcc-4.4.0-x86_64-apple-darwin12.tar.gz
