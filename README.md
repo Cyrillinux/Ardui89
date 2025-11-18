@@ -1,22 +1,13 @@
-#Ardui89 8051 C IDE Beta 0.3.11 for Arduino IDE
+#Ardui89 8051 C IDE 0.4.1 for Arduino IDE
 
-Under GPL license
+#Under GPL license
 
-Add 8051 architecture family to Arduino IDE :
-
-STC89C52RC, STC89C5x, STC89C516RD+, STC15W408AS-DIP16...
+Adds 8051 architecture family to the Arduino IDE :
+STC89C52RC, STC89C516RD+, STC15W408AS-DIP16
 
 * DISCLAIMER OF ALL WARRANTIES *
 
-MACOS / WINDOZ / LINUX (only 0.3.6/0.2.1)
-
-This package is new projet, just begening, not official package and patch.
-
-Allows to COMPIL a Arduino .ino file for 8051 family in C and UPLOAD into STC89C5x Family
-
-#Important
-
-Under WindOz, using absoluty last version (>=3.8) of CH340 drivers (CH341SER.ZIP) (Included in this package).
+Allows you to COMPILE a .ino file of the 8051 C family program and UPLOAD it into the STC89C5x, STC15..., etc. family.
 
 #Versions
 0.0.1  : first Mac OS try (compiling only) (Arch 8051 STC89C51RC(4kb) and STC89C52RC(8kb))
@@ -35,9 +26,16 @@ Under WindOz, using absoluty last version (>=3.8) of CH340 drivers (CH341SER.ZIP
 0.3.9  : (25/05/23) Any bugs fixed : compiling core problem on Mac OS Sequoia and Windows 11
 0.3.10 : (25/05/27) Add int_to_string like function (same to_string but for int exclusively), and 8051/pgmspace.h 
 0.3.11 : (25/05/31) add STC89C516RD+ (62464 bytes (64kb-internal isp)) and 22.1184 Mhz clock option
-0.3.12 : (25/06/14) add #include <string.h>
+BETA 0.3.12 : (25/06/14) add #include <string.h> + Prévoir les STC15F2K16 et K32 et STC32G12k128.
+0.4.0  : (25/07/27) better RAM management
+0.4.1  : (25/10/16) add 29.4912 Mhz external clock option
+
+#Platforms
+MacOS, Wind'Oz. (Stable)
 
 #To do
+analogRead, analogWrite etc...
+Stable Linux version.
 analogRead, analogWrite with new STC32G12k128 platform.
 
 #Installation and test
@@ -47,7 +45,8 @@ analogRead, analogWrite with new STC32G12k128 platform.
 2/ Launch Arduino
 
 3/ In Arduino->Preferences->Additional Board Manager URLS
-    add http://bacciel.com/tools/package_ardui89_index.json
+    add for Arduino Version =1.x https://sourceforge.net/projects/stc89/files/packages/package_ardui89_index.json
+    add for Arduino Version >=2.x  https://github.com/Cyrillinux/Ardui89/releases/download/packages/package_ardui89_index.json
     
 4/ In Tools->Boards:...->Board Manager
     search "8051"
@@ -79,11 +78,16 @@ sudo python3 -m pip stcgal
 
 sudo apt-get install sdcc
 
+#Important
+
+Under Wind'Oz, using absoluty last version (>=3.8) of CH340 drivers (CH341SER.ZIP) (Included in this package).
+
+
 Many thanks
 
 Cyril BARBATO
 
-http://bacciel.com
+https://sourceforge.net/projects/stc89
 cyril.barbato@gmx.com
 
 # Arduino <=> STC89C51/STC89C52/STC89C5x/STC89C51x pinout equivalent
