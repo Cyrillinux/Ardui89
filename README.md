@@ -46,7 +46,7 @@ analogRead, analogWrite with new STC32G12k128 platform.
 
 3/ In Arduino->Preferences->Additional Board Manager URLS
     add for Arduino All Versions
-    https://master.dl.sourceforge.net/project/stc89/packages/package_ardui89_tst_index.json?viasf=1
+    https://master.dl.sourceforge.net/project/stc89/packages/package_ardui89_index.json?viasf=1
     
 4/ In Tools->Boards:...->Board Manager
     search "8051"
