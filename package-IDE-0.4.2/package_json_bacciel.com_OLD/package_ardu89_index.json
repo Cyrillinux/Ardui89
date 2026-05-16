@@ -1,0 +1,130 @@
+{
+    "packages": [
+        {
+            "name": "Ardu89",
+            "maintainer": "Cyril BARBATO",
+            "websiteURL": "https://backciel.com",
+            "email": "cyril.barbato@gmx.com",
+            "help": {
+                "online": "https://backciel.com"
+            },
+            "platforms": [
+                {
+                    "category": "Ardu89",
+                    "name": "Ardu89",
+                    "version": "0.0.5",
+                    "size": "75203",
+                    "checksum": "SHA-256:3a1eb779228d18ab0275f6bb0a0ee0796c22e9b0d37c15a860273bf05c0b95ee",
+                    "archiveFileName": "ardu89-0.0.5.tar.gz",
+                    "url": "http://bacciel.com/tools/ardu89-0.0.5.tar.gz",
+                    "architecture": "8051",
+                    "boards": [
+                        { "name": "Ardu89 Uno (STC15F2K32S2)" },
+                        { "name": "Ardu89 Cinque Uno (STC89C51)" },
+                        { "name": "Ardu89 Cinque Due (STC89C52)" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Ardu89",
+                            "version": "4.4.0-0.0.5",
+                            "name": "sdcc"
+                        },
+                        {
+                            "packager": "Ardu89",
+                            "version": "0.0.5",
+                            "name": "stcflashisp"
+                        },
+                        {
+                            "packager": "Ardu89",
+                            "version": "3.7.2-post1",
+                            "name": "python3"
+                        }
+                    ]
+                }
+            ],
+            "tools": [
+                {
+                    "version": "4.4.0-0.0.5",
+                    "name": "sdcc",
+                    "systems": [
+                        {
+                            "size": "32991412",
+                            "checksum": "SHA-256:83924cbe8594029eb69390ebe127393a6a78717d71ac130ad05d6aeccd39a151",
+                            "archiveFileName": "sdcc-4.4.0-0.0.5-x86_64-apple-darwin12.tar.gz",
+                            "url": "http://bacciel.com/tools/sdcc-4.4.0-0.0.5-x86_64-apple-darwin12.tar.gz",
+                            "host": "x86_64-apple-darwin12"
+                        }
+                    ]
+                },
+                {
+                    "version": "0.0.5",
+                    "name": "stcflashisp",
+                    "systems": [
+                        {
+                            "size": "118794",
+                            "checksum": "SHA-256:a3491a7f4eecf9f5a5d04fb20df996de84eca157da2356ec65fa10b71eebe1a9",
+                            "host": "x86_64-apple-darwin12",
+                            "archiveFileName": "stcflashisp-0.0.5-x86_64-apple-darwin12.tar.gz",
+                            "url": "http://bacciel.com/tools/stcflashisp-0.0.5-x86_64-apple-darwin12.tar.gz"
+                        }
+                    ]
+                },
+                {
+                    "version": "3.7.2-post1",
+                    "name": "python3",
+                    "systems": [
+                        {
+                            "host": "x86_64-mingw32",
+                            "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-3.7.2.post1-embed-win32v2a.zip",
+                            "archiveFileName": "python3-3.7.2.post1-embed-win32v2a.zip",
+                            "checksum": "SHA-256:f57cb2daf86176d2929e7c58990c2ac32554e3219d454dcac10e464ddda35bf2",
+                            "size": "6428926"
+                        },
+                        {
+                            "host": "i686-mingw32",
+                            "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-3.7.2.post1-embed-win32v2a.zip",
+                            "archiveFileName": "python3-3.7.2.post1-embed-win32v2a.zip",
+                            "checksum": "SHA-256:f57cb2daf86176d2929e7c58990c2ac32554e3219d454dcac10e464ddda35bf2",
+                            "size": "6428926"
+                        },
+                        {
+                            "host": "aarch64-linux-gnu",
+                            "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
+                            "archiveFileName": "python3-via-env.tar.gz",
+                            "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3",
+                            "size": "292"
+                        },
+                        {
+                            "host": "arm-linux-gnueabihf",
+                            "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
+                            "archiveFileName": "python3-via-env.tar.gz",
+                            "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3",
+                            "size": "292"
+                        },
+                        {
+                            "host": "i686-pc-linux-gnu",
+                            "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
+                            "archiveFileName": "python3-via-env.tar.gz",
+                            "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3",
+                            "size": "292"
+                        },
+                        {
+                            "host": "x86_64-apple-darwin",
+                            "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-macosx-portable.tar.gz",
+                            "archiveFileName": "python3-macosx-portable.tar.gz",
+                            "checksum": "SHA-256:01a5bf1fa264c6f04cfaadf4c6e9f6caaacb6833ef40104dfbe953fcdb9bca1c",
+                            "size": "25494144"
+                        },
+                        {
+                            "host": "x86_64-pc-linux-gnu",
+                            "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
+                            "archiveFileName": "python3-via-env.tar.gz",
+                            "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3",
+                            "size": "292"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+stc89.name=STC ISP (stcflashisp.py)
+stc89.communication=serial
+stc89.protocol=89
+stc89.program.tool=stcflashisp.py
+stc89.program.protocol=89
