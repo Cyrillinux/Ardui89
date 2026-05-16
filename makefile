@@ -42,3 +42,6 @@ create: preproc
 	git remote add origin https://github.com/Cyrillinux/Ardui89.git
 	git branch -M main
 	git push -u origin main --force
+	
+	rm -rf examples
+	rm -rf .git
