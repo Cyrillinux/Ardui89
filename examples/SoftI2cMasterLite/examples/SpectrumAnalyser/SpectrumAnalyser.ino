@@ -106,7 +106,7 @@ void loop() {
 
     // 1. Acquisition et détection d'amplitude réelle
     for (unsigned char i = 0; i < 128; i++) {
-        val = analogRead(0);
+        val = analogRead(A0);
         if (val < min_val) min_val = val;
         if (val > max_val) max_val = val;
         
